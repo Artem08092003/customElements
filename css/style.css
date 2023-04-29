@@ -328,7 +328,7 @@ body {
 }
 
 .contact__btn:focus {
-    outline: 2px solid #c1ad12;
+    border: 2px solid #c1ad12;
 }
 
 .contact__btn:hover {
