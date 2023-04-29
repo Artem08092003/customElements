@@ -287,16 +287,21 @@ body {
     height: 60px;
     padding: 0 20px;
     border-radius: 10px;
-    border: none;
+    border: 2px solid transparent;
 }
 
 .contact__input:focus {
-    outline: 2px solid #c1ad12;
+    border: 2px solid #c1ad12 !important;
+    outline: none;
 }
 
 .contact__input.js-validate-error-field {
     border: 1px solid #FF5C00 !important;
     color: #FF5C00 !important;
+}
+
+.contact__input.js-validate-error-field:focus {
+    border: 2px solid #c1ad12 !important;
 }
 
 .contact__input::placeholder {
@@ -319,6 +324,7 @@ body {
     border-radius: 10px;
     background-color: #FF5C00;
     border-radius: 10px;
+    border: 2px solid transparent;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -329,16 +335,19 @@ body {
 
 .contact__btn:focus {
     border: 2px solid #c1ad12;
+    outline: none;
 }
 
 .contact__btn:hover {
     background-color: #bb4a09;
     outline: none;
+    border: 2px solid transparent;
 }
 
 .contact__btn:active {
     background-color: #953905;
     outline: none;
+    border: 2px solid transparent;
 }
 
 .js-validate-error-label {
