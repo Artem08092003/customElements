@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="liblary/choices/choices.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /**
+    * Reinstate scrolling for non-JS clients
+    */
+        .simplebar-content-wrapper {
+            scrollbar-width: auto;
+            -ms-overflow-style: auto;
+        }
+
+        .simplebar-content-wrapper::-webkit-scrollbar,
+        .simplebar-hide-scrollbar::-webkit-scrollbar {
+            display: initial;
+            width: initial;
+            height: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Кастомный чекбокс -->
+        <section class="section">
+            <div class="checkbox__content">
+                <h4 class="title__h4">
+                    Категории:
+                </h4>
+                <form class="form__checkbox" action="">
+                    <label for="check-1" class="label__checkbox">
+                        <input type="checkbox" name="check" class="check" id="check-1" checked>
+                        <span class="descr__checkbox">Динозавры</span>
+                        <span class="checkbox" tabindex="0"></span>
+                    </label>
+                    <label for="check-2" class="label__checkbox">
+                        <input type="checkbox" name="check" class="check" id="check-2">
+                        <span class="descr__checkbox">Медведи</span>
+                        <span class="checkbox" tabindex="0"></span>
+                    </label>
+                    <label for="check-3" class="label__checkbox">
+                        <input type="checkbox" name="check" class="check" id="check-3">
+                        <span class="descr__checkbox">Косули</span>
+                        <span class="checkbox" tabindex="0"></span>
+                    </label>
+                    <label for="check-4" class="label__checkbox">
+                        <input type="checkbox" name="check" class="check" id="check-4">
+                        <span class="descr__checkbox">Лисы</span>
+                        <span class="checkbox" tabindex="0"></span>
+                    </label>
+                    <label for="check-5" class="label__checkbox">
+                        <input type="checkbox" name="check" class="check" id="check-5">
+                        <span class="descr__checkbox">Волки</span>
+                        <span class="checkbox" tabindex="0"></span>
+                    </label>
+                    <label for="check-6" class="label__checkbox">
+                        <input type="checkbox" class="check" id="check-6">
+                        <span class="descr__checkbox">Олени и лоси</span>
+                        <span class="checkbox" tabindex="0"></span>
+                    </label>
+                </form>
+            </div>
+        </section>
+
+        <!-- Кастомный селект -->
+        <section class="section">
+            <select name="type" id="selectCustom" tabindex="0" aria-label="выберите материал">
+                <option disabled selected class="option__descr">Материал</option>
+                <option value="M-1" class="option__descr">Древесина</option>
+                <option value="M-2" class="option__descr">Металл</option>
+                <option value="M-3" class="option__descr">Камень</option>
+                <option value="M-4" class="option__descr">Пластик</option>
+                <option value="M-5" class="option__descr">Композитный</option>
+                <option value="M-6" class="option__descr">Гипс</option>
+            </select>
+        </section>
+
+        <!-- карта яндекса -->
+        <section class="section section__map">
+            <p class="map__descr">
+                В качестве адреса для маркера используйте: Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур
+                Сен Дени 54
+            </p>
+            <div id="myMap-1" tabindex="0" aria-label="Карта яндекс где находится организация, Франция, Иль-де-Франс, Париж, X округ Парижа, улица дю Фобур
+            Сен Дени 54"></div>
+        </section>
+
+        <!-- скроллбар -->
+        <section class="section">
+            <div class="customScroll" tabindex="0" data-simplebar>
+                <p class="scroll__text">
+                    Сложно сказать, почему многие известные личности представлены в исключительно положительном свете.
+                    Лишь
+                    активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими
+                    инстанциями. Мы
+                    вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет
+                    собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения,
+                    гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно
+                    интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы.
+                    Значимость
+                    этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на
+                    привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+                </p>
+            </div>
+        </section>
+
+        <!-- contact form -->
+        <section class="section">
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="contact__form" aria-label="введите свои данные">
+                <label for="name" class="contact__label">
+                    <input class="contact__input" type="text" name="Имя" id="name" placeholder="Имя*"
+                        data-validate-field="name">
+                </label>
+                <label for="tel" class="contact__label">
+                    <input class="contact__input" type="tel" name="Тел" id="tel" placeholder="Телефон*"
+                        data-validate-field="tel" data-validate-rules="phone">
+                </label>
+                <label for="email" class="contact__label">
+                    <input class="contact__input" type="email" name="Майл" id="email" placeholder="E-mail*"
+                        data-validate-field="mail">
+                </label>
+                <button class="btn__reset contact__btn">Заказать</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="liblary/choices/choices.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="liblary/form-contact/just-validate.min.js"></script>
+    <script src="liblary/form-contact/inputmask.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
