@@ -92,7 +92,7 @@ body {
 }
 
 /* focus-visible */
-.js-focus-visible :focus:not(.focus-visible) {
+.js-focus-visible:focus:not(.focus-visible) {
     outline: none;
 }
 
@@ -454,6 +454,7 @@ body {
     font-size: 12px;
     line-height: 16px;
     word-spacing: 3px;
+    text-align: center;
     background-color: #666;
     color: #FFFFFF;
 }
