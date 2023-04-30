@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>База знаний</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="liblary/choices/choices.min.css">
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
@@ -40,32 +40,32 @@
                     <label for="check-1" class="label__checkbox">
                         <input type="checkbox" name="check" class="check" id="check-1" checked>
                         <span class="descr__checkbox">Динозавры</span>
-                        <span class="checkbox" tabindex="0"></span>
+                        <span class="checkbox"></span>
                     </label>
                     <label for="check-2" class="label__checkbox">
                         <input type="checkbox" name="check" class="check" id="check-2">
                         <span class="descr__checkbox">Медведи</span>
-                        <span class="checkbox" tabindex="0"></span>
+                        <span class="checkbox"></span>
                     </label>
                     <label for="check-3" class="label__checkbox">
                         <input type="checkbox" name="check" class="check" id="check-3">
                         <span class="descr__checkbox">Косули</span>
-                        <span class="checkbox" tabindex="0"></span>
+                        <span class="checkbox"></span>
                     </label>
                     <label for="check-4" class="label__checkbox">
                         <input type="checkbox" name="check" class="check" id="check-4">
                         <span class="descr__checkbox">Лисы</span>
-                        <span class="checkbox" tabindex="0"></span>
+                        <span class="checkbox"></span>
                     </label>
                     <label for="check-5" class="label__checkbox">
                         <input type="checkbox" name="check" class="check" id="check-5">
                         <span class="descr__checkbox">Волки</span>
-                        <span class="checkbox" tabindex="0"></span>
+                        <span class="checkbox"></span>
                     </label>
                     <label for="check-6" class="label__checkbox">
                         <input type="checkbox" class="check" id="check-6">
                         <span class="descr__checkbox">Олени и лоси</span>
-                        <span class="checkbox" tabindex="0"></span>
+                        <span class="checkbox"></span>
                     </label>
                 </form>
             </div>
@@ -115,7 +115,8 @@
 
         <!-- contact form -->
         <section class="section">
-            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="contact__form" aria-label="введите свои данные">
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="contact__form"
+                aria-label="введите свои данные">
                 <label for="name" class="contact__label">
                     <input class="contact__input" type="text" name="Имя" id="name" placeholder="Имя*"
                         data-validate-field="name">
@@ -131,8 +132,34 @@
                 <button class="btn__reset contact__btn">Заказать</button>
             </form>
         </section>
+
+        <!-- Tooltip -->
+        <section class="section">
+            <div class="tooltip__container">
+                <div class="tooltip__content">
+                    <p class="tooltip__descr">
+                        Следует отметить, что социально-экономическое развитие способствует повышению качества
+                        переосмысления внешнеэкономических политик.
+                    </p>
+                    <div class="tooltip">
+                        <div class="tooltip__market" tabindex="0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+                                    fill="none" />
+                            </svg>
+                        </div>
+                        <div class="tooltip__popup">
+                            Глава 2, страница 176
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
+    <script src="liblary/focus-visible/focus-visible.js"></script>
     <script src="liblary/choices/choices.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
